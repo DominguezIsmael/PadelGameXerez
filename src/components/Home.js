@@ -48,7 +48,7 @@ class Home extends Component {
  
                         <Carousel.Caption>
                             <h1>Hazte socio y paga menos</h1>
-                            <ModalReact precios={this.state.precios}/>
+                            {/* <ModalReact precios={this.state.precios}/> */}
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>

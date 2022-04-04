@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.5740cf87.css",
-    "main.js": "./static/js/main.9e4c5d9f.js",
+    "main.js": "./static/js/main.cac6a9c3.js",
     "static/js/787.319676fc.chunk.js": "./static/js/787.319676fc.chunk.js",
     "static/media/Pista4.jpg": "./static/media/Pista4.ab51e4de2af21b22f09d.jpg",
     "static/media/Pista3.jpg": "./static/media/Pista3.fec57bd5b6f417d5f69e.jpg",
@@ -28,11 +28,11 @@
     "static/media/MapPunto.png": "./static/media/MapPunto.6eb9c98fa559cf130ccb.png",
     "index.html": "./index.html",
     "main.5740cf87.css.map": "./static/css/main.5740cf87.css.map",
-    "main.9e4c5d9f.js.map": "./static/js/main.9e4c5d9f.js.map",
+    "main.cac6a9c3.js.map": "./static/js/main.cac6a9c3.js.map",
     "787.319676fc.chunk.js.map": "./static/js/787.319676fc.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5740cf87.css",
-    "static/js/main.9e4c5d9f.js"
+    "static/js/main.cac6a9c3.js"
   ]
 }
