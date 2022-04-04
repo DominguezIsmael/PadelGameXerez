@@ -7,7 +7,7 @@ import Home from './Home';
 import Club from './Club';
 import Instalaciones from "./Instalaciones";
 import Contacta from "./Contacta";
-import Reserva from "./Reserva";
+import LoginReserva from "./LoginReserva";
 
 class Navegacion extends React.Component {
     render() {
@@ -40,7 +40,7 @@ class Navegacion extends React.Component {
                                     <Link className="nav-link" to={"/contacta"}>Contacta</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className="nav-link" to={"/reserva"}>Reserva</Link>
+                                    <Link className="nav-link" to={"/loginReserva"}>Reserva</Link>
                                 </li>
                             </ul>
                         </div>
@@ -50,7 +50,7 @@ class Navegacion extends React.Component {
                         <Route path='/club' element={<Club />} />
                         <Route path='/instalaciones' element={<Instalaciones />} />
                         <Route path='/contacta' element={<Contacta />} />
-                        <Route path='/reserva' element={<Reserva />} />
+                        <Route path='/loginReserva' element={<LoginReserva />} />
                     </Routes>
                 </HashRouter>
                 <footer style={{ backgroundColor: "#17263d", color:"#fff", marginTop:"50px" }}>

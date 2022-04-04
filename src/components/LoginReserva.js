@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Url } from "../assets/servicios/Url";
 import { Container, Form, Button, Row, Col } from "react-bootstrap";
-import { Link } from "react-router-dom";
 import md5 from "md5";
+import Reserva from "./Reserva";
 
 
 const LoginReserva = () => {
@@ -37,9 +37,9 @@ const LoginReserva = () => {
 
     return (
         <>
-            <Container>
+            <Container style={{ marginTop: "50px" }}>
                 <Row>
-                    <Col>
+                    <Col style={{ backgroundColor: "#1d498f", borderRadius: "20px", padding: "10px", fontWeight: "bold", textTransform: "uppercase", color: "#fff" }}>
                         <Form>
                             <Form.Group className="mb-3" controlId="email">
                                 <Form.Label>Correo electrónico:</Form.Label>
@@ -59,33 +59,13 @@ const LoginReserva = () => {
                                         <div className="alert-danger text-center">{"Email o password incorrectos."}</div>
                                     ) :
                                     (
-                                        <span />
+                                        <span/>
                                     )
                             }
                         </Form>
                     </Col>
                 </Row>
             </Container>
-            {/* <div className="row mt-3 ml-4 mr-4">
-                <div className="col-lg-4 col-md-3 col-sm-2" />
-                <div className="col">
-                    <form className="form-group mb4">
-                        <input onChange={(e) => { setEmail(e.target.value) }} placeholder="Email" type="email" className="form-control" />
-                        <input onChange={(e) => { setPass(e.target.value) }} placeholder="Contraseña" type="password" className="form-control mt-4" />
-                    </form>
-                    <button onClick={loginUsuario} className="btn btn-success btn-block mb-4">INICIAR SESIÓN</button>
-                    {
-                        !existe ?
-                            (
-                                <div className="alert-danger text-center">{"Email o password incorrectos."}</div>
-                            ) :
-                            (
-                                <span />
-                            )
-                    }
-                </div>
-                <div className="col-lg-4 col-md-3 col-sm-2" />
-            </div> */}
         </>
     )
 }

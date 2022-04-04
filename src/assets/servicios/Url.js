@@ -1,2 +1,2 @@
-export const Url ="http://localhost/apiPadelGameXerez";
+export const Url ="http://localhost/apiPadelGameXerez/";
 
