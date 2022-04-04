@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Table, Form, Button, Row, Col } from 'react-bootstrap';
+import { Container, Form, Button, Row, Col } from 'react-bootstrap';
 import LoginReserva from './LoginReserva';
 
 class Reserva extends Component{
@@ -46,7 +46,6 @@ class Reserva extends Component{
                         Reservar
                     </Button>
                 </Form>
-                <LoginReserva></LoginReserva>
             </Container>
         );
     }

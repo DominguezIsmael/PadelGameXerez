@@ -1,8 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Url } from "../assets/servicios/Url";
 import { Container, Form, Button, Row, Col } from "react-bootstrap";
 import md5 from "md5";
-import Reserva from "./Reserva";
 
 
 const LoginReserva = () => {
@@ -13,7 +12,6 @@ const LoginReserva = () => {
     const [pass, setPass] = useState("")
 
     const [existe, setExiste] = useState(true);
-
 
     const loginUsuario = (e) => {
         fetch(Url + "loginReserva.php?email=" + email + "&password=" + md5(pass))
@@ -29,7 +27,6 @@ const LoginReserva = () => {
                     setEmail(r)
                 }
             })
-
             .catch(err => {
                 console.log(err)
             })

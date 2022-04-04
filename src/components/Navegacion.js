@@ -8,6 +8,7 @@ import Club from './Club';
 import Instalaciones from "./Instalaciones";
 import Contacta from "./Contacta";
 import LoginReserva from "./LoginReserva";
+import Reserva from "./Reserva";
 
 class Navegacion extends React.Component {
     render() {
@@ -51,6 +52,7 @@ class Navegacion extends React.Component {
                         <Route path='/instalaciones' element={<Instalaciones />} />
                         <Route path='/contacta' element={<Contacta />} />
                         <Route path='/loginReserva' element={<LoginReserva />} />
+                        <Route path='/reserva' element={<Reserva />} />
                     </Routes>
                 </HashRouter>
                 <footer style={{ backgroundColor: "#17263d", color:"#fff", marginTop:"50px" }}>

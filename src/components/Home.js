@@ -6,7 +6,6 @@ import segundaCarrusel from '../assets/images/Detalles/segundaCarrusel.jpg';
 import terceraCarrusel from '../assets/images/Detalles/terceraCarrusel.jpg';
 import ModalReact from './ModalReact';
 import { Link } from 'react-router-dom';
-import Reserva from './Reserva';
 import { Url } from '../assets/servicios/Url';
 
 class Home extends Component {
