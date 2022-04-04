@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "./static/css/main.5740cf87.css",
+    "main.js": "./static/js/main.9e4c5d9f.js",
+    "static/js/787.319676fc.chunk.js": "./static/js/787.319676fc.chunk.js",
+    "static/media/Pista4.jpg": "./static/media/Pista4.ab51e4de2af21b22f09d.jpg",
+    "static/media/Pista3.jpg": "./static/media/Pista3.fec57bd5b6f417d5f69e.jpg",
+    "static/media/Pista2.jpg": "./static/media/Pista2.1f4d1a599500d413aebe.jpg",
+    "static/media/Pista1.jpg": "./static/media/Pista1.e239b33634d6ecdf45be.jpg",
+    "static/media/Pista5.jpg": "./static/media/Pista5.9d9fe325ddb35ea7d906.jpg",
+    "static/media/primeraCarrusel.jpg": "./static/media/primeraCarrusel.54c14a27ce74e8707a5d.jpg",
+    "static/media/Bar2.jpg": "./static/media/Bar2.a9805789cde34698f6cb.jpg",
+    "static/media/segundaCarrusel.jpg": "./static/media/segundaCarrusel.91136ea962fa73587407.jpg",
+    "static/media/Bar1.jpg": "./static/media/Bar1.efeaccf7f8c850e0c4ae.jpg",
+    "static/media/Bar3.jpg": "./static/media/Bar3.964369830a58501fdc6d.jpg",
+    "static/media/terceraCarrusel.jpg": "./static/media/terceraCarrusel.85d35b27822c8efbf25a.jpg",
+    "static/media/ImageClub.jpg": "./static/media/ImageClub.1088ad366777c75703f7.jpg",
+    "static/media/logoPadel.png": "./static/media/logoPadel.7ff181b6ecf6e15f7a54.png",
+    "static/media/ClubCard3.png": "./static/media/ClubCard3.885592f2d0fcfd31b0b6.png",
+    "static/media/Horario.png": "./static/media/Horario.fdd01a2385db148b3180.png",
+    "static/media/ClubCard1.png": "./static/media/ClubCard1.16693badf874f3270aaf.png",
+    "static/media/redesSociales.png": "./static/media/redesSociales.e8ff275be05dc80d03e5.png",
+    "static/media/Numero.png": "./static/media/Numero.243492ce2de087505483.png",
+    "static/media/ClubCard5.png": "./static/media/ClubCard5.31d66beefb0fc837ba18.png",
+    "static/media/ClubCard4.png": "./static/media/ClubCard4.35a88b027c7e72678c60.png",
+    "static/media/ClubCard2.png": "./static/media/ClubCard2.f33c5677d20152061804.png",
+    "static/media/ClubCard6.png": "./static/media/ClubCard6.38e0eb5976082e2c92fb.png",
+    "static/media/MapPunto.png": "./static/media/MapPunto.6eb9c98fa559cf130ccb.png",
+    "index.html": "./index.html",
+    "main.5740cf87.css.map": "./static/css/main.5740cf87.css.map",
+    "main.9e4c5d9f.js.map": "./static/js/main.9e4c5d9f.js.map",
+    "787.319676fc.chunk.js.map": "./static/js/787.319676fc.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5740cf87.css",
+    "static/js/main.9e4c5d9f.js"
+  ]
+}
