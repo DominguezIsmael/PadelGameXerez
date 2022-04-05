@@ -37,3 +37,5 @@ Lista de lo que quiero en mi proyecto:
   3. Instalaciones: Imágenes de las pistas, cuáles son y un slider con imágenes del bar desde distintas posiciones, mostrando así todo lo que ofrece.
   4. Contacto: Una forma de contactar con la gente del club para algun tipo de duda o problema, también para informar de otras formas de contacto con el club, horario, teléfono, donde está, etc.
   5. Reserva: Un formulario para poder escoger una pista, hora y dia.
+
+## En este repositorio estará la documentación del proyecto una vez lo termine.
