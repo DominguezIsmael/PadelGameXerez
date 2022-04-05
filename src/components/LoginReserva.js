@@ -19,7 +19,7 @@ const LoginReserva = () => {
     const loginUsuario = (e) => {
         var datosEnviar= {email:email, password:md5(pass)}
         fetch(Url + "loginReserva.php",{
-            method:'POST',
+            method:"POST",
             body:JSON.stringify(datosEnviar)
         })
             .then((r) => r.json())
@@ -60,14 +60,13 @@ const LoginReserva = () => {
                             <Button variant="primary" onClick={loginUsuario}>
                                 Iniciar sesión
                             </Button>
-                         </Form>:
+                         </Form>
+                         :
                          (<Reserva id={idCliente}/>)
                     }
                     </Col>
                 </Row>
-            </Container>
-            :
-            
+            </Container>            
         </>
     )
 }
