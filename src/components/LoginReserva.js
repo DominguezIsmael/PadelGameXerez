@@ -17,7 +17,11 @@ const LoginReserva = () => {
     const [existe, setExiste] = useState(false);
 
     const loginUsuario = (e) => {
-        fetch(Url + "loginReserva.php?email=" + email + "&password=" + md5(pass))
+        var datosEnviar= {email:email, password:md5(pass)}
+        fetch(Url + "loginReserva.php",{
+            method:'POST',
+            body:JSON.stringify(datosEnviar)
+        })
             .then((r) => r.json())
             .then(r => {
                 if (r.success === 0) {

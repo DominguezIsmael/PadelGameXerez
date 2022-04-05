@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import { Container, Row, Col, Card, CardGroup, Carousel } from 'react-bootstrap';
-import Pista1 from '../assets/images/Pista 1/Pista1.jpg';
-import Pista2 from '../assets/images/Pista 2/Pista2.jpg';
-import Pista3 from '../assets/images/Pista 3/Pista3.jpg';
-import Pista4 from '../assets/images/Pista 4/Pista4.jpg';
-import Pista5 from '../assets/images/Pista 5/Pista5.jpg';
-import Bar1 from '../assets/images/Bar/Bar1.jpg';
-import Bar2 from '../assets/images/Bar/Bar2.jpg';
-import Bar3 from '../assets/images/Bar/Bar3.jpg';
+import Pista1 from '../assets/images/Pista1.jpg';
+import Pista2 from '../assets/images/Pista2.jpg';
+import Pista3 from '../assets/images/Pista3.jpg';
+import Pista4 from '../assets/images/Pista4.jpg';
+import Pista5 from '../assets/images/Pista5.jpg';
+import Bar1 from '../assets/images/Bar1.jpg';
+import Bar2 from '../assets/images/Bar2.jpg';
+import Bar3 from '../assets/images/Bar3.jpg';
 
 class Instalaciones extends Component {
     render() {

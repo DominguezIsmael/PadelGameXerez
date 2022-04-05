@@ -1,9 +1,9 @@
 import { Container } from 'bootstrap-4-react/lib/components/layout';
 import { Carousel, Button, ProgressBar, ListGroup, Modal } from 'react-bootstrap';
 import React, { Component } from 'react';
-import primeraCarrusel from '../assets/images/Detalles/primeraCarrusel.jpg';
-import segundaCarrusel from '../assets/images/Detalles/segundaCarrusel.jpg';
-import terceraCarrusel from '../assets/images/Detalles/terceraCarrusel.jpg';
+import primeraCarrusel from '../assets/images/primeraCarrusel.jpg';
+import segundaCarrusel from '../assets/images/segundaCarrusel.jpg';
+import terceraCarrusel from '../assets/images/terceraCarrusel.jpg';
 import ModalReact from './ModalReact';
 import { Link } from 'react-router-dom';
 

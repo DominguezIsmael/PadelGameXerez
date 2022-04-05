@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Container, Row, Col, Image, ProgressBar, Card, CardGroup } from 'react-bootstrap';
-import ImageClub from '../assets/images/Exterior/ImageClub.jpg';
+import ImageClub from '../assets/images/ImageClub.jpg';
 import ClubCard1 from '../assets/images/ClubCard1.png';
 import ClubCard2 from '../assets/images/ClubCard2.png';
 import ClubCard3 from '../assets/images/ClubCard3.png';

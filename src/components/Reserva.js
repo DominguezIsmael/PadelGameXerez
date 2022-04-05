@@ -11,7 +11,7 @@ class Reserva extends Component{
             fecha:"",
             hora:"",
             pista:"",
-            cliente:props.id,
+            cliente:"",
             errores:[]
          }
     }
@@ -37,7 +37,6 @@ class Reserva extends Component{
         if(!fecha)errores.push("error_fecha");
         if(!hora)errores.push("error_hora");
         if(!pista)errores.push("error_pista");
-        if(!cliente)errores.push("error_cliente");
 
         this.setState({errores:errores});
         if(errores.length>0)return false;
@@ -45,7 +44,7 @@ class Reserva extends Component{
 
         var datosEnviar= {nombre:nombre, fecha:fecha, hora:hora, pista:pista, cliente:cliente}
 
-        fetch(Url+"reserva.php?", {
+        fetch(Url+"reserva.php", {
             method:"POST",
             body:JSON.stringify(datosEnviar)
         })
@@ -58,8 +57,7 @@ class Reserva extends Component{
     }
 
     render(){
-        
-        // const idCliente=this.props.id;
+        this.state.cliente=this.props.id;
         return(
             <Container style={{ marginTop: "50px" }}>
                 <Form onSubmit={this.reservar} style={{backgroundColor:"#1d498f", borderRadius:"20px", padding:"10px", fontWeight: "bold", textTransform: "uppercase", color: "#fff"}}>
