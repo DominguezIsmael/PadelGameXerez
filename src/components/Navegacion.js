@@ -1,5 +1,5 @@
 import React from 'react';
-import { HashRouter, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import { Container, Row, Col } from 'react-bootstrap';
 import { BsInstagram, BsTwitter, BsWhatsapp, BsFacebook } from "react-icons/bs";
 import logo from '../assets/images/logoPadel.png';
@@ -14,7 +14,7 @@ class Navegacion extends React.Component {
     render() {
         return (
             <>
-                <HashRouter>
+                <BrowserRouter>
                     <nav className="navbar navbar-expand-lg navbar-dark" style={{ backgroundColor: "#17263d" }}>
                         <img
                             src={logo}
@@ -54,7 +54,7 @@ class Navegacion extends React.Component {
                         <Route path='/loginReserva' element={<LoginReserva />} />
                         <Route path='/reserva' element={<Reserva />} />
                     </Routes>
-                </HashRouter>
+                </BrowserRouter>
                 <footer style={{ backgroundColor: "#17263d", color:"#fff", marginTop:"50px" }}>
                     <Container>
                         <Row>

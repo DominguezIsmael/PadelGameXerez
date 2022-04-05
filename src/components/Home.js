@@ -6,21 +6,11 @@ import segundaCarrusel from '../assets/images/Detalles/segundaCarrusel.jpg';
 import terceraCarrusel from '../assets/images/Detalles/terceraCarrusel.jpg';
 import ModalReact from './ModalReact';
 import { Link } from 'react-router-dom';
-import { Url } from '../assets/servicios/Url';
+
 
 class Home extends Component {
-    constructor(props){
-        super(props);
-        this.state = {precios:[]};
-    }
-    componentDidMount(){
-        fetch(Url+"/precio.php")
-        .then(r => r.json())
-        .then(data=>{
-            this.setState({precios:data})
-           console.log("Home",this.state.precios);
-        })
-    }
+   
+
     render() {
         return (
             <Container>
@@ -47,7 +37,7 @@ class Home extends Component {
  
                         <Carousel.Caption>
                             <h1>Hazte socio y paga menos</h1>
-                            {/* <ModalReact precios={this.state.precios}/> */}
+                            <ModalReact />
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>

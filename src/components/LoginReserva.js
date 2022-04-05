@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Url } from "../assets/servicios/Url";
 import { Container, Form, Button, Row, Col } from "react-bootstrap";
 import md5 from "md5";
+import Reserva from "./Reserva";
 
 
 const LoginReserva = () => {
@@ -11,7 +12,9 @@ const LoginReserva = () => {
     const [email, setEmail] = useState("")
     const [pass, setPass] = useState("")
 
-    const [existe, setExiste] = useState(true);
+    const [idCliente, setIdCliente] = useState();
+
+    const [existe, setExiste] = useState(false);
 
     const loginUsuario = (e) => {
         fetch(Url + "loginReserva.php?email=" + email + "&password=" + md5(pass))
@@ -22,8 +25,8 @@ const LoginReserva = () => {
                     setExiste(false)
                 }
                 else {
-                    console.log(r)
                     setExiste(true)
+                    setIdCliente(r[0].id)
                     setEmail(r)
                 }
             })
@@ -34,9 +37,12 @@ const LoginReserva = () => {
 
     return (
         <>
+
             <Container style={{ marginTop: "50px" }}>
                 <Row>
                     <Col style={{ backgroundColor: "#1d498f", borderRadius: "20px", padding: "10px", fontWeight: "bold", textTransform: "uppercase", color: "#fff" }}>
+                    {
+            !existe ?
                         <Form>
                             <Form.Group className="mb-3" controlId="email">
                                 <Form.Label>Correo electrónico:</Form.Label>
@@ -50,19 +56,14 @@ const LoginReserva = () => {
                             <Button variant="primary" onClick={loginUsuario}>
                                 Iniciar sesión
                             </Button>
-                            {
-                                !existe ?
-                                    (
-                                        <div className="alert-danger text-center">{"Email o password incorrectos."}</div>
-                                    ) :
-                                    (
-                                        <span/>
-                                    )
-                            }
-                        </Form>
+                         </Form>:
+                         (<Reserva id={idCliente}/>)
+                    }
                     </Col>
                 </Row>
             </Container>
+            :
+            
         </>
     )
 }

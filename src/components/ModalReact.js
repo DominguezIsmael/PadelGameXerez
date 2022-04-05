@@ -1,18 +1,31 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Button, Modal, Table } from 'react-bootstrap';
+import { Url } from '../assets/servicios/Url';
 
-function ModalReact(props) {
+function ModalReact() {
+  const [precios, setPrecios] = useState();
+  const [datosCargados, setDatosCargados] = useState(false);
+
+  useEffect(() => {
+    if (!datosCargados) {
+      fetch(Url + "precio.php")
+        .then(r => r.json())
+        .then(data => {
+          setPrecios(data);
+          setDatosCargados(true);
+        });
+    }
+  });
+
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
- // console.log(props)
-  const [precios, setPrecios] = useState({});
- // console.log("Modal",props.precios);
-  setPrecios(props.precios);
+  
 
   return (
+    datosCargados?
     <>
       <Button variant="primary" onClick={handleShow}>
         Precios
@@ -31,16 +44,16 @@ function ModalReact(props) {
                 <th>Precios no socios</th>
               </tr>
             </thead>
-            <tbody>
+           <tbody>
               <tr>
                 <td>Lunes a Viernes</td>
-                <td>{8} €</td>
-                <td>14 €</td>
+                <td>{precios[0].precio_socio} €</td>
+                <td>{precios[0].precio_normal} €</td>
               </tr>
               <tr>
                 <td>Sábados y Domingos</td>
-                <td>14 €</td>
-                <td>20 €</td>
+                <td>{precios[1].precio_socio} €</td>
+                <td>{precios[1].precio_normal} €</td>
               </tr>
             </tbody>
           </Table>
@@ -51,7 +64,7 @@ function ModalReact(props) {
           </Button>
         </Modal.Footer>
       </Modal>
-    </>
+    </>: <span/>
   );
 }
 
