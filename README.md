@@ -1,7 +1,7 @@
 ## **PADEL WEB XEREZ.**
 ### *Ismael Domínguez Campos.*
 
-## Introduccion del proyecto.
+## Introducción del proyecto.
   Lo que quiero hacer en éste proyecto es una web para un club de pádel.
   
 ## Finalidad.
